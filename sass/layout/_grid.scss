@@ -1,17 +1,19 @@
-.row{
+.row {
     max-width: $grid-width;
-    background-color: #eee;
+    background-color: $color-grey-light-1;
     margin: 0 auto $gutter-vertical;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
 }
-    .col-1-of-2{
-        width: calc((100% - #{$gutter-horizontal}) / 2);
-        
-    }
-    /*
+
+.col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+
+}
+
+/*
     .col-1-of-3{
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
     }
@@ -33,17 +35,16 @@
         width: calc(3* (100% - 3 * #{$gutter-horizontal}) / 4 + 2 *#{$gutter-horizontal});
     }
     */
-    
-    
-    
-    
-    @include clearfix;
 
-[class^="col-"]{
+
+
+
+@include clearfix;
+
+[class^="col-"] {
     float: left;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: $gutter-horizontal;
     }
 }
-
